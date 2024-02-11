@@ -30,6 +30,10 @@ describe("13 Roman To Intiger", () => {
 			input: "MCMXCIV",
 			output: 1994,
 		},
+		{
+			input: "IX",
+			output: 9,
+		},
 	];
 
 	tests.forEach(({ input, output }) =>
