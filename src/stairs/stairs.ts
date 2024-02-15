@@ -14,3 +14,16 @@ export const solution = (n: number) => {
 
 	return one + 1;
 };
+
+// fib sequence
+export const solution_r = (n: number) => {
+	const fib = (num: number): number => {
+		if (num === 3) return 3;
+		if (num === 2) return 2;
+		if (num === 1) return 1;
+		if (num < 0) return 1;
+		else return fib(num - 1) + fib(num - 2) + fib(num - 3);
+	};
+
+	return fib(n) + 1;
+};
